@@ -26,3 +26,16 @@ int main()
 }
 int main()
 {
+double result;
+	double dobutok = 1;
+	int end = 10;
+	int y;
+	cout << "Enter y: ";
+	cin >> y;
+	for (int k = 1; k <= end; k++)
+	{
+		dobutok *= log10(k * y);
+	}
+	result = dobutok + pow(y, 2);
+	cout << "Z = " << result << endl;
+}
